@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: "norms-bold";
+    src: url("./Fonts/Norms-Bold");
+}
+
+@font-face {
+    font-family: "norms-regular";
+    src: url("./Fonts/Norms-Regular");
+}
+@font-face {
+    font-family: "norms-medium";
+    src: url("./Fonts/Norms-Medium");
+}
+
+.header-div{
+    position: relative;
+    height: 551px;
+}
+
+.banner-container{
+    position: absolute;
+    width: 100%;
+    height: 549px;
+    z-index: -1;
+}
+
+.banner-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+.header-contents-container{
+    padding: 0 8px;
+}
+
+.auth-section{
+    display:flex;
+    justify-content: end;
+    column-gap: 8px;
+    transform: translate(-17px,16px);
+}
+
+.auth-section p{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-family: norms-bold;
+    transform: translateY(3px);
+
+}
+.btn-sign-in{
+    background: #eb1700;
+    width: 71.03px;
+    border: 1px solid transparent;
+    height: 32px;
+    border-radius: 42px;
+    transform: translateX(1px);
+
+}
+
+.btn-sign-in p{
+    color: #fff;
+    margin-top: 2px;
+    text-align: center;
+    letter-spacing: -0.454401px;
+}
+
+.btn-sign-up{
+    height: 32px;
+    width: 79.75px;
+    border: 1px solid transparent;
+    border-radius: 42px;
+    background-color: white;
+    transform: translateX(1px);
+    text-align: center;
+
+}
+
+.btn-sign-up p{
+    font-weight: 700;
+    font-family: norms-bold;
+    margin-top: 2px;
+    color: #494949;
+    letter-spacing: -0.454401px;
+}
+
+.logo-text-container{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    transform: translateY(146px);
+}
+
+.logo-text{
+    transform: translateY(-1px);
+}
+
+.logo-text img{
+    transform: translateY(3px);
+}
+
+.restaurants-near-container{
+    transform: translateY(161px);
+}
+
+.restaurant-desc h2{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: norms-bold;
+    line-height: 28px;
+}
+
+.restaurants-search-container{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 324px;
+    height: 48px;
+    padding-left: 16px;
+    padding-right: 4px;
+    transform: translate(18px,24px);
+    border: 1px solid transparent;
+    border-radius: 31px;
+}
+
+.search-box img{
+    margin-left: -1px;
+    margin-top: 5px;
+}
+
+.restaurants-search-container p{
+    /* font-family */
+    color: #615c5c;
+    margin-left: 16px;
+    font-size: 16px;
+    transform: translate(-32px, -1px);
+}
+
+.enter-btn-div{
+    margin-top: 5px;
+    margin-right: 7px;
+    transform: translateX(30px);
+}
+
+
+/* Desktop- */
+@media screen and (min-width: 1440px){
+    .banner-container img{
+        display: none;
+    }
+    .banner-desktop{
+        width: 100%;
+        height: 100%;
+    }
+    .banner-desktop img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    .enter-btn-div{
+        display: none;
+    }
+}
+
+
+/* Mobile */
+
+@media screen and (min-width:425px){
+    .banner-desktop img{
+        display: none;
+    }
+}
+
+
+/* Laptop- */
+
+@media  screen and(min-width: 1024px) {
+    .logo-text-container{
+        column-gap: 12px;
+
+    }
+    .logo img{
+        height: 24px;
+    }
+    .logo-text img{
+        height: 18px;
+        transform: translateY(3px);
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width:768px){
+    .header-div{
+        height: 650px
+    };
+
+    .banner-container{
+        height: 650px;
+    }
+    .auth-section p{
+        font-size: 18px;
+        transform: translateY(6px);
+    }
+
+    .btn-sign-in{
+        width: 78.03px;
+        height: 40px;
+    }
+
+}
+
+
+
