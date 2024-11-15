@@ -1,0 +1,63 @@
+-> linux
+
+1) it is faster.
+2) it is needed for cloud computing
+
+
+-> commands
+
+
+whomai  : shows the username
+man     : to get the manual
+clear   : crears the terminal
+pwd     : print the current working directory
+ls      : List the contents of the folder
+cd      : is used to change the directory
+mkdir   : to make a new folder
+touch   : create an empty file
+rmdir   : it is used to delete the empty folder
+rm      : it is used to delete the files and folders
+xdg-open: open the file or directory outside the terminal
+mv      : it is used to move the file
+cp      : it is used to copy the file 
+head    : outputs the first part of the file
+tail    : outputs the last part of the file
+redirecting: (>) date > index.txt - stores the date value in the index.txt file
+cat     : concatenate file and print on the standard output cat fime1 file2 
+less    : it shows the content stored in the file in a nice and interactive UI
+echo    : it is used to print value that we input
+wc      : print word count , byte count
+sort    : sorts the information in the file
+uniq    : removes the duplicate value and gives the uniqe value
+diff    : it is used to get the difference between two files
+find    : it is used to find the files matching to the search patterns
+grep    : it is used to search in files or combine with pipe to filter the output
+du      : disk utility it is used to find the file space usage
+ps      : this is the list of user_initiated processes currently runnung in the current session
+top     : it is used to display and update sorted information about processes
+kill    : it is used the terminate the program
+sleep   : delay for aspecified amount of time.
+gzip    : it is used to compress files
+gunzip  : it is used to unzip the or to remove the .gz extension
+tar     : it is used to create an archieve grouping multiple files in a single file
+nano    : it is a text editor that can be run directly from the terminal
+xargs   : it is used to convert input from standard input into arguments to a commands
+pipe    : it is used to combine two or more commands
+ln      : it is used to create links
+who     : it diaplays the users logged in to the system
+su      : it is used to switch user
+sudo    : it is used to run the commands as root user
+passwd  : it is used to change the current password
+chown   : to change the ownership of the file or folder 
+chmod   : it is used to change mode (permissions) of a file or directory. (Read , Write , Execute)
+
+
+-> PERMISSIONS
+
+character      Effect on files                                                   Effect on Directories
+
+r           : file can be read                                                directory's content canbe listed
+w           : file can be modified                                            directory's contents can be modified
+x           : file can be treated as program to be executed                   allows a directory to be entered or "cd" ed into
+-           :file cannot be read ,modified or executed depending              directory contents cannot be shown, modified or "cd" ed into depending o the location of the - character
+             on the location of - character                       
