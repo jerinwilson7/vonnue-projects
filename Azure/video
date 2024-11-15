@@ -1,0 +1,5 @@
+ <div class="banner-video-container">
+                    <video preload="auto" muted data-autoplay="true"  autoplay src="videos/bg-video.mp4"></video>
+                    <!-- <video class="d-block w-100" muted playsinline preload="auto" data-autoplay="true" data-lazyload="true" autoplay data-width-now="860"><source src="https://s7d2.scene7.com/is/content/microsoftcorp/ACOM-HP-May-Hero-Animated-0x720-3266k" type="video/mp4">
+                    </video> -->
+                </div>

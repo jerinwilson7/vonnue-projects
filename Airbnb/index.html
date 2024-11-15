@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <!-- <div class="learn-icons">
+        <span>Learn more about Icons</span>
+    </div> -->
+
+    <!-- Main-Nav -->
+    <div class="main-sticky-header">
+        <nav>
+            <div class="nav-main-container">
+                <div class="search-bar-container">
+                    <div class="search-bar">
+                        <div class="search-icon">
+                            <img src="images/search.svg" alt="">
+                        </div>
+                        <div class="search-text">
+                            <div class="main-search-text">
+                                <span>Where to?</span>
+                            </div>
+                            <div class="row-search-text">
+                                <div class="row-text">
+                                    <span>Anywhere</span>
+                                </div>
+                                <div class="row-text">
+                                    <span>.</span>
+                                </div>
+                                <div class="row-text">
+                                    <span>Anytime</span>
+                                </div>
+                                <div class="row-text">
+                                    <span>.</span>
+                                </div>
+                                <div class="row-text">
+                                    <span>Add guests</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <header>
+                <div class="logo-search-nav">
+                    <div class="header-logo-text">
+                        <img src="images/svgexport-1.svg" alt="">
+                    </div>
+                    <div class="header-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" style="display: block;">
+                            <path
+                                d="M29.3864 22.7101C29.2429 22.3073 29.0752 21.9176 28.9157 21.5565C28.6701 21.0011 28.4129 20.4446 28.1641 19.9067L28.1444 19.864C25.9255 15.0589 23.5439 10.1881 21.0659 5.38701L20.9607 5.18316C20.7079 4.69289 20.4466 4.18596 20.1784 3.68786C19.8604 3.0575 19.4745 2.4636 19.0276 1.91668C18.5245 1.31651 17.8956 0.833822 17.1853 0.502654C16.475 0.171486 15.7005 -9.83959e-05 14.9165 4.23317e-08C14.1325 9.84805e-05 13.3581 0.171877 12.6478 0.503224C11.9376 0.834571 11.3088 1.31742 10.8059 1.91771C10.3595 2.46476 9.97383 3.05853 9.65572 3.68858C9.38521 4.19115 9.12145 4.70278 8.8664 5.19757L8.76872 5.38696C6.29061 10.1884 3.90903 15.0592 1.69015 19.8639L1.65782 19.9338C1.41334 20.463 1.16057 21.0102 0.919073 21.5563C0.75949 21.9171 0.592009 22.3065 0.448355 22.7103C0.0369063 23.8104 -0.094204 24.9953 0.0668098 26.1585C0.237562 27.334 0.713008 28.4447 1.44606 29.3804C2.17911 30.3161 3.14434 31.0444 4.24614 31.4932C5.07835 31.8299 5.96818 32.002 6.86616 32C7.14824 31.9999 7.43008 31.9835 7.71027 31.9509C8.846 31.8062 9.94136 31.4366 10.9321 30.8639C12.2317 30.1338 13.5152 29.0638 14.9173 27.5348C16.3194 29.0638 17.6029 30.1338 18.9025 30.8639C19.8932 31.4367 20.9886 31.8062 22.1243 31.9509C22.4045 31.9835 22.6864 31.9999 22.9685 32C23.8664 32.002 24.7561 31.8299 25.5883 31.4932C26.6901 31.0444 27.6554 30.3161 28.3885 29.3804C29.1216 28.4447 29.5971 27.3341 29.7679 26.1585C29.9287 24.9952 29.7976 23.8103 29.3864 22.7101ZM14.9173 24.377C13.1816 22.1769 12.0678 20.1338 11.677 18.421C11.5169 17.7792 11.4791 17.1131 11.5656 16.4573C11.6339 15.9766 11.8105 15.5176 12.0821 15.1148C12.4163 14.6814 12.8458 14.3304 13.3374 14.0889C13.829 13.8475 14.3696 13.7219 14.9175 13.7219C15.4655 13.722 16.006 13.8476 16.4976 14.0892C16.9892 14.3307 17.4186 14.6817 17.7528 15.1151C18.0244 15.5181 18.201 15.9771 18.2693 16.4579C18.3556 17.114 18.3177 17.7803 18.1573 18.4223C17.7661 20.1349 16.6526 22.1774 14.9173 24.377ZM27.7406 25.8689C27.6212 26.6908 27.2887 27.4674 26.7762 28.1216C26.2636 28.7759 25.5887 29.2852 24.8183 29.599C24.0393 29.9111 23.1939 30.0217 22.3607 29.9205C21.4946 29.8089 20.6599 29.5239 19.9069 29.0824C18.7501 28.4325 17.5791 27.4348 16.2614 25.9712C18.3591 23.3846 19.669 21.0005 20.154 18.877C20.3723 17.984 20.4196 17.0579 20.2935 16.1475C20.1791 15.3632 19.8879 14.615 19.4419 13.9593C18.9194 13.2519 18.2378 12.6768 17.452 12.2805C16.6661 11.8842 15.798 11.6777 14.9175 11.6777C14.0371 11.6777 13.1689 11.8841 12.383 12.2803C11.5971 12.6765 10.9155 13.2515 10.393 13.9589C9.94707 14.6144 9.65591 15.3624 9.5414 16.1465C9.41524 17.0566 9.4623 17.9822 9.68011 18.8749C10.1648 20.9993 11.4748 23.384 13.5732 25.9714C12.2555 27.4348 11.0845 28.4325 9.92769 29.0825C9.17468 29.5239 8.34007 29.809 7.47395 29.9205C6.64065 30.0217 5.79525 29.9111 5.0162 29.599C4.24581 29.2852 3.57092 28.7759 3.05838 28.1217C2.54585 27.4674 2.21345 26.6908 2.09411 25.8689C1.97932 25.0334 2.07701 24.1825 2.37818 23.3946C2.49266 23.0728 2.62663 22.757 2.7926 22.3818C3.0274 21.851 3.27657 21.3115 3.51759 20.7898L3.54996 20.7197C5.75643 15.9419 8.12481 11.0982 10.5894 6.32294L10.6875 6.13283C10.9384 5.64601 11.1979 5.14267 11.4597 4.6563C11.7101 4.15501 12.0132 3.68171 12.3639 3.2444C12.6746 2.86903 13.0646 2.56681 13.5059 2.35934C13.9473 2.15186 14.4291 2.04426 14.9169 2.04422C15.4047 2.04418 15.8866 2.15171 16.3279 2.35911C16.7693 2.56651 17.1593 2.86867 17.4701 3.24399C17.821 3.68097 18.1242 4.15411 18.3744 4.65538C18.6338 5.13742 18.891 5.63623 19.1398 6.11858L19.2452 6.32315C21.7097 11.0979 24.078 15.9415 26.2847 20.7201L26.3046 20.7631C26.5498 21.2936 26.8033 21.8419 27.042 22.382C27.2082 22.7577 27.3424 23.0738 27.4566 23.3944C27.7576 24.1824 27.8553 25.0333 27.7406 25.8689Z"
+                                fill="currentcolor" />
+                        </svg>
+                        <!-- <img src="images/airbnb-logo.svg" alt=""> -->
+                    </div>
+
+                    <div class="header-search-section">
+                        <div class="dual-search-container">
+                            <div class="search-txt st1">
+                                <div>Anywhere</div>
+                            </div>
+                            <span class="line"></span>
+                            <div class="search-txt st2">
+                                <div>Any week</div>
+                            </div>
+                            <span class="line"></span>
+                            <div class="search-txt st3">
+                                <div>Add guests</div>
+                            </div>
+
+                            <div class="search-icon">
+                                <img src="images/svgexport-10-1 (1).svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-nav">
+                    <div class="header-text">Airbnb your home</div>
+
+                    <div class="language-icon">
+                        <img src="images/globe.svg" alt="">
+                    </div>
+
+                    <div class="profile-container">
+                        <div class="profile-child-container">
+
+                            <div class="menu">
+                                <img src="images/menu.svg" alt="">
+                            </div>
+
+                            <div class="profile-div">
+                                <img src="images/profile.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </nav>
+
+
+
+        <!-- --------Icons list ---------- -->
+
+
+        <div class="icons-container">
+            <div class="category-list">
+                <div class="category-flex">
+                    <div class="category-container">
+                        <div class="category-grid">
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/Icons.webp" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Icons</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/pools.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Amazing pools</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/views.jpg" alt="">
+                                </div>
+                                <div class="icon-text view">
+                                    <span>Amazing views</span>
+                                </div>
+                            </div>
+
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/farms.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Farms</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/top.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Top of the world</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/omg.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>OMG!</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/side.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Countryside</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/beachf.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Beachfront</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/castles.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Castles</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/Treehouse.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Treehouses</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/tiny.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Tiny homes</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/cabin.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Cabins</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/design.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Design</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/luxe.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Luxe</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/lake.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Lakefront</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/topcites.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Top cities</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/tropical.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Tropical</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/vine.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Vineyards</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/rooma.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Rooms</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/grid.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Off-the-grid</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/history.jpg" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Historical homes</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/Icons.webp" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Icons</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/Icons.webp" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Icons</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/Icons.webp" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Icons</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/Icons.webp" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Icons</span>
+                                </div>
+                            </div>
+                            <div class="icon-col">
+                                <div class="icon-img">
+                                    <img src="images/Icons.webp" alt="">
+                                </div>
+                                <div class="icon-text">
+                                    <span>Icons</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="next-icon">
+                            <i class="fa-solid fa-chevron-right"></i>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <!-- -----------Grid section---------------- -->
+
+    <main>
+        <div class="main-container">
+            <div class="hotels-container">
+                <div class="hotels-grid-container">
+
+
+                    <div class="item-container">
+                        <div class="item-img-container">
+                            <img src="images/janhvi.webp" alt="" width="100%">
+                        </div>
+                        <div class="item-contents-container">
+                            <div class="item-title">Live like Bollywood star Janhvi Kapoor</div>
+                            <span class="item-desc">Hosted by Janhvi Kapoor</span>
+                            <div class="item-price">
+                                <span class="">$0 per guest</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-container">
+                        <div class="item-img-container">
+                            <img src="images/wakeup.webp" alt="" width="100%">
+                        </div>
+                        <div class="item-contents-container">
+                            <div class="item-title">Wake up in the Musee d'Orsay</div>
+                            <span class="item-desc">Hosted by Mathieu Lehanneur</span>
+                            <div class="item-price">
+                                <span class="">Coming 21 may</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-img-container">
+                            <img src="images/supersuit.jpeg" alt="" width="100%">
+                        </div>
+                        <div class="item-contents-container">
+                            <div class="item-title">Design your Incredibles Supersuit</div>
+                            <span class="item-desc">Hosted by Edna Mode</span>
+                            <div class="item-price">
+                                <span class="">Coming 24 May</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-img-container">
+                            <img src="images/insideout.png" alt="" width="100%">
+                        </div>
+                        <div class="item-contents-container">
+                            <div class="item-title">Make core memories with Inside Out 2</div>
+                            <span class="item-desc">Hosted by Joy</span>
+                            <div class="item-price">
+                                <span class="">Coming June</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-img-container">
+                            <img src="images/prince.webp" alt="" width="100%">
+                        </div>
+                        <div class="item-contents-container">
+                            <div class="item-title">Stay in Prince's Purple Rain house</div>
+                            <span class="item-desc">Hosted by Wendy and Lisa</span>
+                            <div class="item-price">
+                                <span class="">Coming August</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-img-container">
+                            <img src="images/kevin.webp" alt="" width="100%">
+                        </div>
+                        <div class="item-contents-container">
+                            <div class="item-title">Go VIP with Kevin Hart</div>
+                            <span class="item-desc">Hosted by Kevin Hart</span>
+                            <div class="item-price">
+                                <span class="">Coming August</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-container">
+                        <div class="item-img-container">
+                            <img src="images/doja.webp" alt="" width="100%">
+                        </div>
+                        <div class="item-contents-container">
+                            <div class="item-title">Join a living room session with Doja</div>
+                            <span class="item-desc">Hosted by Doja Cat</span>
+                            <div class="item-price">
+                                <span class="">coming October</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="past-experiance">
+                <h1>Past experiances</h1>
+            </div>
+
+            <div class="experiance-grid-container">
+                <div class="hotels-container">
+                    <div class="hotels-grid-container">
+
+
+                        <div class="item-container">
+                            <div class="item-img-container">
+                                <img src="images/train.webp" alt="" width="100%">
+                            </div>
+                            <div class="item-contents-container">
+                                <div class="item-title">Train at the X-mansion</div>
+                                <span class="item-desc">Hosted by Jubilee</span>
+                                <div class="item-price">
+                                    <span class="">Sold out</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-container">
+                            <div class="item-img-container">
+                                <img src="images/tour.webp" alt="" width="100%">
+                            </div>
+                            <div class="item-contents-container">
+                                <div class="item-title">Go on tour with Feid</div>
+                                <span class="item-desc">Hosted by Feid</span>
+                                <div class="item-price">
+                                    <span class="">Sold out</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <div class="item-img-container">
+                                <img src="images/hotair.webp" alt="" width="100%">
+                            </div>
+                            <div class="item-contents-container">
+                                <div class="item-title">Drift off in the Up house</div>
+                                <span class="item-desc">Hosted by Carl Fledricksen</span>
+                                <div class="item-price">
+                                    <span class="">Sold out</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <div class="item-img-container">
+                                <img src="images/mansion.webp" alt="" width="100%">
+                            </div>
+                            <div class="item-contents-container">
+                                <div class="item-title">Crash at the X-Mansion</div>
+                                <span class="item-desc">Hosted by Jubilee</span>
+                                <div class="item-price">
+                                    <span class="">Sold out</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <div class="item-img-container">
+                                <img src="images/kaby.webp" alt="" width="100%">
+                            </div>
+                            <div class="item-contents-container">
+                                <div class="item-title">Game with Khaby Lame</div>
+                                <span class="item-desc">Hosted by Khaby Lame</span>
+                                <div class="item-price">
+                                    <span class="">Sold out</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <div class="item-img-container">
+                                <img src="images/ferrari.jpeg" alt="" width="100%">
+                            </div>
+                            <div class="item-contents-container">
+                                <div class="item-title">Spend the night in the Ferrari Museum</div>
+                                <span class="item-desc">Hosted by Marc Gene</span>
+                                <div class="item-price">
+                                    <span class="">Sold out</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <div class="item-img-container">
+                                <img src="images/shrek.webp" alt="" width="100%">
+                            </div>
+                            <div class="item-contents-container">
+                                <div class="item-title">shrek's Swamp</div>
+                                <span class="item-desc">Hosted by Donkey</span>
+                                <div class="item-price">
+                                    <span class="">coming October</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <div class="item-img-container">
+                                <img src="images/barbie.webp" alt="" width="100%">
+                            </div>
+                            <div class="item-contents-container">
+                                <div class="item-title">Barbie's Malibu DreamHouse, Ken'd......</div>
+                                <span class="item-desc">Hosted by Ken</span>
+                                <div class="item-price">
+                                    <span class="">Sold out</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <div class="item-img-container">
+                                <img src="images/pub.webp" alt="" width="100%">
+                            </div>
+                            <div class="item-contents-container">
+                                <div class="item-title">Ted Lasso's Favorite Pub</div>
+                                <span class="item-desc">Hosted by Doja Cat</span>
+                                <div class="item-price">
+                                    <span class="">Sold out</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <div class="item-img-container">
+                                <img src="images/retreat.webp" alt="" width="100%">
+                            </div>
+                            <div class="item-contents-container">
+                                <div class="item-title">Houseplant Retreart</div>
+                                <span class="item-desc">Hosted by Seth Rogen</span>
+                                <div class="item-price">
+                                    <span class="">Sold out</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <div class="item-img-container">
+                                <img src="images/homealone.jpeg" alt="" width="100%">
+                            </div>
+                            <div class="item-contents-container">
+                                <div class="item-title">Home Alone Holiday</div>
+                                <span class="item-desc">Hosted by Buzz</span>
+                                <div class="item-price">
+                                    <span class="">coming October</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <div class="item-img-container">
+                                <img src="images/blockbuster.webp" alt="" width="100%">
+                            </div>
+                            <div class="item-contents-container">
+                                <div class="item-title">The Last Blockbuster</div>
+                                <span class="item-desc">Hosted by Sandi</span>
+                                <div class="item-price">
+                                    <span class="">Sold out</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="future-container">
+            <div class="future-section">
+                <div></div>
+                <div class="future-main-container">
+                    <h2>Insipiration for future getaways</h2>
+                    <div class="future-contents-container">
+                        <div class="future-header-scroll">
+                            <div class="future-scroll-contents">
+                                <div class="future-scroll-flex">
+                                    <div class="future-scroll-text">Popular</div>
+                                    <div class="future-scroll-text">Arts & culture</div>
+                                    <div class="future-scroll-text">Outdoors</div>
+                                    <div class="future-scroll-text">Mountains</div>
+                                    <div class="future-scroll-text">Beach</div>
+                                    <div class="future-scroll-text">Unique stays</div>
+                                    <div class="future-scroll-text">Categories</div>
+                                    <div class="future-scroll-text">Things to do</div>
+                                </div>
+                            </div>
+                            <button><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                        <div class="future-list-section">
+                            <div class="future-list-container">
+                                <ul>
+                                    <li>
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Canmore</span>
+                                            <span class="future-desc">Holiday rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Banalmadena</span>
+                                            <span class="future-desc">House rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Marbella</span>
+                                            <span class="future-desc">Beach house rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Mijas</span>
+                                            <span class="future-desc">House rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Perscott</span>
+                                            <span class="future-desc">Cottage rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Scottsdale</span>
+                                            <span class="future-desc">Holiday rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Tucson</span>
+                                            <span class="future-desc">Flat rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Jasper</span>
+                                            <span class="future-desc">Holiday rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Mountain View</span>
+                                            <span class="future-desc">House rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Devonport</span>
+                                            <span class="future-desc">Holiday rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+
+                                        <div class="future-list-div">
+                                            <span class="future-title">Mallacoota</span>
+                                            <span class="future-desc">Holiday rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="future-list-div">
+                                            <span class="future-title">Ibiza</span>
+                                            <span class="future-desc">Holiday rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="future-list-div">
+                                            <span class="future-title">Anaheim</span>
+                                            <span class="future-desc">Holiday rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Monterey</span>
+                                            <span class="future-desc">House rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Paso Robles</span>
+                                            <span class="future-desc">House rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Santa Barbara</span>
+                                            <span class="future-desc">Beachfront rentals</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="future-list-div">
+
+                                            <span class="future-title">Sonoma</span>
+                                            <span class="future-desc">Cottage rentals</span>
+                                        </div>
+                                    </li>
+
+                                    <div class="show-more">
+                                        <span>Show more</span>
+                                    </div>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </main>
+
+
+    <footer>
+        <div class="footer-main-container">
+            <div class="footer-section">
+                <span class="footer-ruler"></span>
+                <div class="footer-container">
+
+                    <section class="support-container">
+                        <h3>Support</h3>
+                        <ul>
+                            <li>Help Centre</li>
+                            <li>AirCover</li>
+                            <li>Anti-discrimination</li>
+                            <li>Disablity support</li>
+                            <li>Cancellation options</li>
+                            <li>Report neighbourhood concern</li>
+                        </ul>
+                    </section>
+
+                    <section class="hosting">
+                        <h3>Hosting</h3>
+                        <ul>
+                            <li>Aibnb your home</li>
+                            <li>AirCover for Hosts</li>
+                            <li>Hosting resources</li>
+                            <li>Community forum</li>
+                            <li>Hosting responsibly</li>
+                            <li>Join a free Hosting class</li>
+                        </ul>
+                    </section>
+
+                    <section class="Airbnb-sec">
+                        <h3>Airbnb</h3>
+                        <ul>
+                            <li>Newsroom</li>
+                            <li>New features</li>
+                            <li>Careers</li>
+                            <li>Investors</li>
+                            <li>Airbnb.org emergency stays</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="bottom-footer-container">
+                    <span class="footer-ruler"></span>
+                    <div class="lang-copyright-container">
+
+                        <div class="copyright-terms-container">
+
+                            <div class="copy-rs">
+                                <div class="copy-rs-container">
+                                    <span class="language">
+                                        <button class="footer-btn">
+                                            <span class="footer-ruler"></span>
+                                            <span class="globe-icon">
+                                                <img src="images/globe.svg" alt="">
+                                            </span>
+                                            <span class="eng">English (IN)</span>
+                                        </button>
+                                    </span>
+
+                                    <span class="inr-container">
+                                        <button class="footer-btn">
+                                            <span class="footer-ruler"></span>
+                                            <span class="rupee">₹</span>
+                                            <span class="inr">INR</span>
+                                        </button>
+                                    </span>
+    
+                                </div>
+                            </div>
+
+
+                            <div class="language-social-container">
+                                <div class="language-container">
+                                    <span class="language">
+                                        <button class="footer-btn">
+                                            <span class="footer-ruler"></span>
+                                            <span class="globe-icon">
+                                                <img src="images/globe.svg" alt="">
+                                            </span>
+                                            <span>English (IN)</span>
+                                        </button>
+                                    </span>
+    
+                                    <span class="inr-container">
+                                        <button>
+                                            <span class="footer-ruler"></span>
+                                            <span class="rupee">₹</span>
+                                            <span class="inr">INR</span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <div class="social-media-container">
+                                    <ul>
+                                        <li> <img src="images/fb.svg" alt=""></li>
+                                        <li><img src="images/twitter.svg" alt=""></li>
+                                        <li><img src="images/ig.svg" alt="" srcset=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="copy-terms-container">
+                            <div class="copyright-terms-section">
+                                <div class="copyright-container">© 2024 Airbnb, Inc.</div>
+                                <div class="privacy-container">
+                                    <span class="privacy-dot main-dot">
+                                        <span>.</span>
+                                    </span>
+                                    <span class="privacy-section">
+                                        <ol>
+                                            <li>
+                                                <a href="">Privacy</a>
+                                                <span class="privacy-dot dot">
+                                                    <span>.</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <a href="">Terms</a>
+                                                <span class="privacy-dot dot">
+                                                    <span>.</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <a href="">Sitemap</a>
+                                                <span class="privacy-dot dot">
+                                                    <span>.</span>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <a href="">Company details</a>
+                                             
+                                            </li>
+                                        </ol>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                        <!-- <div class="language-social-container">
+                            <div class="language-container">
+                                <span class="language">
+                                    <button>
+                                        <span class="footer-ruler"></span>
+                                        <span class="globle-icon">
+                                            <img src="images/globe.svg" alt="">
+                                        </span>
+                                        <span>English (IN)</span>
+                                    </button>
+                                </span>
+
+                                <span class="inr-container">
+                                    <button>
+                                        <span class="footer-ruler"></span>
+                                        <span class="rupee">₹</span>
+                                        <span class="inr">INR</span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="social-media-container">
+                                <ul>
+                                    <li> <img src="images/fb.svg" alt=""></li>
+                                    <li><img src="images/twitter.svg" alt=""></li>
+                                    <li><img src="images/ig.svg" alt="" srcset=""></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- -----------------------------------------------------------------------FooterNav------------------------------------------------------------------------- -->
+
+    <div class="footer-nav">
+        <div class="spacer-div"></div>
+        <div class="footer-nav-container">
+            <div class="footer-nav-btn search-foot">
+                <div class="foot-icon-container search-foot-icon">
+                    <div class="foot-icon search-foot-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 24px; width: 24px; stroke: currentcolor; stroke-width: 2.66667; overflow: visible;"><g fill="none"><circle cx="12" cy="12" r="10"></circle><path d="m19 19 11 11"></path></g></svg>
+                    </div>
+                </div>
+                <div class="foot-text">Explore</div>
+            </div>
+            <div  class="footer-nav-btn like">
+                <div class="foot-icon-container">
+                    <div class="foot-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 24px; width: 24px; stroke: currentcolor; stroke-width: 2; overflow: visible;"><path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path></svg>                    </div>
+                </div>
+                <div class="foot-text">Wishlists</div>
+            </div>
+            <div  class="footer-nav-btn foot-login">
+                <div class="foot-icon-container">
+                    <div class="foot-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 24px; width: 24px; stroke: currentcolor; stroke-width: 2; overflow: visible;"><g fill="none"><circle cx="16" cy="16" r="14"></circle><path d="M14.02 19.66a6 6 0 1 1 3.96 0M17.35 19.67H18c3.69.61 6.8 2.91 8.54 6.08m-20.92-.27A12.01 12.01 0 0 1 14 19.67h.62"></path></g></svg>                </div>
+                    </div>
+                    <div class="foot-text">Log in</div>
+        </div>
+    </div>
+</body>
+
+</html>
+
