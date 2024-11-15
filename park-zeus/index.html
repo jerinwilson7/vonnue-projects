@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+
+<!-- import { useState } from "react";
+import Operation from "./Operation";
+import VariableOperation from "./VariableOperation";
+import { Initialvariables } from "../assets/data/initialData";
+import { VariableType } from "../types/variableTypes";
+
+function FormAddVariable() {
+    const [variables, setVariables] = useState(Initialvariables);
+    const [name, setName] = useState('');
+    const [variableOperation, setVariableOperation] = useState([{ id: 0, operator: "" }]);
+    const [selectedVariables, setSelectedVariables] = useState([]);
+
+    const addVariableOperation = () => {
+        setVariableOperation([...variableOperation, { id: 0, operator: "" }]);
+    };
+
+    const handleChange = (id: number, index: number) => {
+        const updatedOperations = [...variableOperation];
+        updatedOperations[index].id = id;
+        setVariableOperation(updatedOperations);
+        
+        const userSelectedOption = variables.find(variable => variable.id === id);
+        if (userSelectedOption) {
+            setSelectedVariables((prevVariables) => [...prevVariables, userSelectedOption]);
+        }
+    };
+
+    const handleOperatorChange = (operator: string, index: number) => {
+        const updatedOperations = [...variableOperation];
+        updatedOperations[index].operator = operator;
+        setVariableOperation(updatedOperations);
+    };
+
+    return (
+        <div className="box">
+            <h2>Create Dynamic Variable</h2>
+            <form>
+                <label>Name</label>
+                <input 
+                    className="variable-name"
+                    type="text"
+                    placeholder="Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                />
+                <div className="variable-equation">
+                    <label>Frame an equation by selecting the variables</label>
+                    {variableOperation.map((_, index) => (
+                        <VariableOperation
+                            key={index}
+                            variables={variables}
+                            addVariableOperation={addVariableOperation}
+                            onHandleChange={(id) => handleChange(id, index)}
+                            onHandleOperatorChange={(operator) => handleOperatorChange(operator, index)}
+                        />
+                    ))}
+                </div>
+                <div>
+                    <Operation expressionName={name} variableOperation={variableOperation} variables={variables} />
+                </div>
+                <button type="button">Update</button>
+            </form>
+        </div>
+    );
+}
+
+export default FormAddVariable;
+ -->
