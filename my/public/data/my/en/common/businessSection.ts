@@ -1,0 +1,46 @@
+import { Common } from '@/assets/svgs';
+import { PartnerLogosProps } from '@/sections/common/PartnerLogos';
+
+export const businessSection: PartnerLogosProps = {
+  title: 'Powering all types of restaurant businesses',
+  description:
+    'Whether you run a self-ordering kiosk, a cloud-based quick-service kitchen, a full-service restaurant, a table-service restaurant, or a fine-dining establishment, HUBBO POS offers a tailored solution for all your unique needs.',
+  imagesLg: [
+    { url: Common.BusinessLogoLarge1, alt: 'logo1' },
+    { url: Common.BusinessLogoLarge2, alt: 'logo2' },
+    { url: Common.BusinessLogoLarge13, alt: 'logo13' },
+    { url: Common.BusinessLogoLarge3, alt: 'logo3' },
+    { url: Common.BusinessLogoLarge4, alt: 'logo4' },
+    { url: Common.BusinessLogoLarge14, alt: 'logo14' },
+    { url: Common.BusinessLogoLarge5, alt: 'logo5' },
+    { url: Common.BusinessLogoLarge6, alt: 'logo6' },
+    { url: Common.BusinessLogoLarge15, alt: 'logo15' },
+    { url: Common.BusinessLogoLarge7, alt: 'logo7' },
+    { url: Common.BusinessLogoLarge8, alt: 'logo8' },
+    { url: Common.BusinessLogoLarge16, alt: 'logo16' },
+    { url: Common.BusinessLogoLarge9, alt: 'logo9' },
+    { url: Common.BusinessLogoLarge10, alt: 'logo10' },
+    { url: Common.BusinessLogoLarge17, alt: 'logo17' },
+    { url: Common.BusinessLogoLarge11, alt: 'logo11' },
+    { url: Common.BusinessLogoLarge12, alt: 'logo12' },
+  ],
+  imagesSm: [
+    { url: Common.BusinessLogoSmall1, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall2, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall13, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall3, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall4, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall14, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall5, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall6, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall15, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall7, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall8, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall16, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall9, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall10, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall17, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall11, alt: 'logo1' },
+    { url: Common.BusinessLogoSmall12, alt: 'logo1' },
+  ],
+};
