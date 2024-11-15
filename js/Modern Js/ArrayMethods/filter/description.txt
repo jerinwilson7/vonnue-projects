@@ -1,0 +1,1 @@
+filter method in js is used to create a new array with all elements that pass the test implemented by a provided function.it doesn't mutate the original array.but return a new array.

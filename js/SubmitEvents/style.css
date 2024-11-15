@@ -1,0 +1,39 @@
+body{
+    background-color: #eee;
+}
+
+form{
+    max-width: 200px;
+    margin: 40px auto;
+    background: white;
+    padding: 10px;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    padding: 4px ;
+    
+}
+
+input:focus{
+    outline: none;
+}
+
+.feedback{
+    font-size: 13px;
+}
+
+.valid{
+    color: #00ff0d;
+    font-size: 13px;
+}
+
+
+.success{
+    border: 3px solid #00ff0d;
+}
+
+.error{
+    border: 3px solid crimson;
+}

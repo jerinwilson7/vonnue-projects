@@ -1,0 +1,6 @@
+The reduce() in js is used to reduce the elements of an array to a single value. It executes a provided function once for each array element, taking four arguments.
+
+1. Accumulator
+2.CurrentValue
+3.Current Index (optional)
+4.Source Array (optional)

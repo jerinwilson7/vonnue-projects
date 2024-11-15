@@ -1,0 +1,4 @@
+every object in javascript has a prototype
+
+prototypes contain all the methods for that object type
+ 

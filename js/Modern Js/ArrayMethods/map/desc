@@ -1,0 +1,1 @@
+the map() method in js is used to iterate over an array to perform a transformation on each element of that array. it creates a new array with results of calling a provided function on every element in the calling array
